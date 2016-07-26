@@ -1,2 +1,446 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
+
+    <item
+        jar="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="2a9ac25faea9231505d45b2e86dd03eb860d2169">
+        <dex dex="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_9eb35d05a0f55b7962575bc6737bfc3bdd7f7596/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="357a8702c49044417d4856861c8f435e7c74ef09">
+        <dex dex="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-analytics-9.2.1_2de8176bc2bbdc50b6d70a88d4c4b0caa98a0279/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="f06a0705d7b8b9d18b00d056fe0e07bec75514e6">
+        <dex dex="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-database-9.2.1_d288292f4c0377fb3f4fe651a27d443d8eda7ed9/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="6a0f2d219f82db499ac03d5a985c4eb3e83fc422">
+        <dex dex="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-analytics-9.2.1_d6c4ead77adfa2a72012a8c9b9555c9977a5a3c4/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-places/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="0979debb5b4d955ddc0e80bb192f4f00c2f91750">
+        <dex dex="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-places-9.2.1_da43c71c340544b3f7ea65502a0f63aad671fefc/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Brandon/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/retrofit/2.1.0/2de7cd8b95b7021b1d597f049bcb422055119f2c/retrofit-2.1.0.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="2de7cd8b95b7021b1d597f049bcb422055119f2c">
+        <dex dex="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/transforms/dex/debug/folders/1000/10/retrofit-2.1.0_e56b4c819e3a7ee61ae5ffc2235048bf102e4898/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.0.0/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="3bd97cfefd783e9de1dd1c30574a6adb44b4409b">
+        <dex dex="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-24.0.0_aeb68baabcf78661e19189a71fb1a929991fdfcf/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Brandon/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.7/751f548c85fa49f330cecbb1875893f971b33c4e/gson-2.7.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="751f548c85fa49f330cecbb1875893f971b33c4e">
+        <dex dex="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/transforms/dex/debug/folders/1000/10/gson-2.7_495a0f255d1b111b62f514e14a7e018a9a2c9d21/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="b24c1a80d8ccaecee7b8b80209b4e273dc22b14d">
+        <dex dex="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tagmanager-9.2.1_5174784944ce27b2c8be184c427fbfbd33d8f92e/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-games/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="4c2b01baa64ba25f8dbdf7f7f828bc5664dab55e">
+        <dex dex="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-games-9.2.1_24cdab6e149f022c519b5aa9b02f8e1e28d51759/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Brandon/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.3.0/2b802460eea20f8f2ad9c08c74e0f14718e88aa9/okhttp-3.3.0.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="2b802460eea20f8f2ad9c08c74e0f14718e88aa9">
+        <dex dex="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/transforms/dex/debug/folders/1000/10/okhttp-3.3.0_2ebd992a8108aaddc000c6b357e64deb12619793/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-panorama/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="05a2710d284c03087013a667a324c9e2aba5bc91">
+        <dex dex="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-panorama-9.2.1_c37c4fb1aab2dd536901461777bd8724a3372c28/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="def5530cb13311617fc8f962e2a90225bb6904e2">
+        <dex dex="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-plus-9.2.1_af8199a93a29effcd8c0ab8ed856297fb79b502b/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-vision/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="3a42c5696fa39930d39770f7e5552a9c965fbe09">
+        <dex dex="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-vision-9.2.1_04540f917d650c9974e8aa82ab981baa4e3fa72b/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="6b896c1067633db41e9c10a3a5d0919c5c4cfc8c">
+        <dex dex="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-basement-9.2.1_c35046c6feb4c8b3855c1bc16b73f502c51171b2/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="3627eacd7f7cafb5e8ae683992e7b2f9b7dcab1a">
+        <dex dex="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-common-9.2.1_d752c25c27aeffffd384eb737098de552f50bd3e/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth-common/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="ee409046028e5657a2a69edaa2eba00d6511a74c">
+        <dex dex="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-auth-common-9.2.1_c254fce83a965547fa786bbf98721f1cb679f19b/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Brandon/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/24.0.0/2943c74db6d4346ab8c6531adac91fa05c137c40/support-annotations-24.0.0.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="2943c74db6d4346ab8c6531adac91fa05c137c40">
+        <dex dex="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-24.0.0_58d75cb248056c6c5ed29e1cd65115a1bb8b1e58/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database-connection/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="05d2e01f33fb2097b51fce3f938dc37a75fe2d6b">
+        <dex dex="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-database-connection-9.2.1_87e3860735ee564dce7addddb2545480c558ea19/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="f3b0ff905873c91ab64addba30cc1e77bed34c4d">
+        <dex dex="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-appinvite-9.2.1_251ac6f47bd4452d0d5a7fb36c6e424c86bd056f/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth-module/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="35a01d7cb4ff6b5976777bf5827fd8f206fb8757">
+        <dex dex="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-auth-module-9.2.1_17e986bae0e10ccdb0dc8c44da3a1453079a5bd3/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="8aada8a0e9e9b3ecdda5e80f17c6a51a468e302a">
+        <dex dex="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-wallet-9.2.1_f902b409906bdd339f5839534089ff01ea28fbd2/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="d41b5d21cc9dd7d210f0ae82ac509ba7f091d611">
+        <dex dex="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-iid-9.2.1_f3d13fc068ec3867315b9d6bca81c6e37935a269/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gass/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="081ced8ab77e606b6743c27cfe93dc450447b046">
+        <dex dex="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-gass-9.2.1_e9e6f29b82f86466f0fa1e2181217ef1cfd45336/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-fitness/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="d064f813cd835f17853e39221b247cf6a997a2db">
+        <dex dex="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-fitness-9.2.1_51be6d8b11bdb8480d053535eff5ebdb0ac10a16/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Brandon/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/converter-gson/2.1.0/aa557d71ead91cbf26e0c316a0f593d168303309/converter-gson-2.1.0.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="aa557d71ead91cbf26e0c316a0f593d168303309">
+        <dex dex="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/transforms/dex/debug/folders/1000/10/converter-gson-2.1.0_0007473803c6a0c5cf3d7f1aa63323a2632d0936/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth-base/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="48917c60ea81213ea39cbd7123996a5401106dc3">
+        <dex dex="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-auth-base-9.2.1_3ff46b092f7d73cbfca245f7796da8a68d41821e/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="421b36cf4f0d3bbd75e8f28647fccf36674ef049">
+        <dex dex="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-base-9.2.1_bed98ed42b3850e0c22f836b8cf20487aa4136e2/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="6deaa6d110d78191192a6f6f4e2bfcd0410e14e5">
+        <dex dex="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_49bd3f330deb4666c2066fcffb38315418ff06d8/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="5337354083e89ed67151859ab0b6b80935c60eaf">
+        <dex dex="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-analytics-impl-9.2.1_6a09e983a7e3322f81557236010b10e6ce92a5a8/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="ee19e33a798d11a5cf309a40155b8223fadcdeea">
+        <dex dex="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-appindexing-9.2.1_e059383f1fa78b23d2153c53c266b2e7dddf8d54/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Brandon/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.8.0/5ea7af56cc7c567ed9856d99efb30740e9b17ff/okio-1.8.0.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="05ea7af56cc7c567ed9856d99efb30740e9b17ff">
+        <dex dex="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/transforms/dex/debug/folders/1000/10/okio-1.8.0_081f4ea218a53d3720d90a0acd2b18ab16ad692e/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-safetynet/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="4b515e6e269bfe848f5b43ac09bce54d6617d4fd">
+        <dex dex="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-safetynet-9.2.1_957a27e80e0b7d1d18965e9c90a588891cfe1522/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads-lite/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="310ef01419435979cc82847cf085799a8d00e7e9">
+        <dex dex="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-ads-lite-9.2.1_34d52b4787bee58b567e7f2e300dd52170971533/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-drive/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="89ab748a6c0ab6ac1d3671f2356d6181e8108bc5">
+        <dex dex="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-drive-9.2.1_084ad222b249fd7b5bd7658f7382ce61ad616547/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/jars/libs/internal_impl-24.0.0.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="fcaf463e10e69c1923ccf1edeba3b4196d239e00">
+        <dex dex="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.0.0_165f7393950b8455bb18ab82f9ab5416075846a3/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="07c569a77f437c5c71eac8b1b636a50bebb69a93">
+        <dex dex="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-location-9.2.1_32bcc6ea1392f488941de55a3d6ea7da6b3094ea/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="e1bec33f1ec5367e25676638b430b9d585f3dbec">
+        <dex dex="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-auth-9.2.1_946f4e72d7e15c225ebc76e4969800744f992ea2/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="2506c5893e125e2f9cfc522378e893620c21b109">
+        <dex dex="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-auth-9.2.1_edeb639bfe39da118a1ee40aac84144627034d66/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="9f2282b9fc24f24c69665032dede1bc7201cf006">
+        <dex dex="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-cast-framework-9.2.1_b25ced120fa5483414178d3318d84e2faf4f4c0b/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-contextmanager/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="ccc963cafe59ce185c49f47baff7eedcb8589bdf">
+        <dex dex="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-contextmanager-9.2.1_37cefe4899e1cf0dd6c90d8b19f8d33387cb246b/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="bbd51be332bace144b3d16501ec0af379c3c8750">
+        <dex dex="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-maps-9.2.1_d6a9c1f0360d97dfe633ac2ed6051a633746c8f3/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="dd1907a2e855eeb2be8aa3486f3d4d4f1c8b22af">
+        <dex dex="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-wearable-9.2.1_6f1b791dba5fa15d4f75fb99315fab8edd1cd3b7/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="d358b3dd49a7c67844622dcbc9cf4339e13952ce">
+        <dex dex="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-mediarouter-v7-23.0.0_e0cdab21b40111ad980fa572af9b68e1d59fa485/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/exploded-aar/com.google.firebase/firebase-crash/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="6c09228ff931eb30b68dd27fe34ed90d978b6892">
+        <dex dex="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-crash-9.2.1_350ed04ed47ae22c8844ae442a2eb63e78bf04a8/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/exploded-aar/com.google.firebase/firebase-config/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="7bb417e9ac8645285342935679e75d371b58b62b">
+        <dex dex="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-config-9.2.1_1c3778decc3186685663c9b7cdd28a73bff0282b/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="428c9bac95b2f72921224e289553a04bea61cda5">
+        <dex dex="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-cast-9.2.1_c19eb83e18a5558718bb49b4bd43551bc20ffe8b/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="6d2f508d1a9fa0fbe1653595e484800c08afb42c">
+        <dex dex="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-ads-9.2.1_9d678a58f9032fe91585b07a4492200a6944bdff/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/exploded-aar/com.google.firebase/firebase-storage-common/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="36e2b438f9b0d68fb2482c8f389e249e32840cff">
+        <dex dex="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-storage-common-9.2.1_24cb8fa2a085a4a887cd78df44dae9aeb4adf6e1/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="819c2c3a4fb135e085445d11131d069cf9c32b2a">
+        <dex dex="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tasks-9.2.1_17c21b9d48fbe36e39c231a5439205ecd0c01a9d/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/exploded-aar/com.google.firebase/firebase-messaging/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="ac78f93fc89c497a65f9d9a352cd405996d2f65a">
+        <dex dex="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-messaging-9.2.1_3f608e8f752cbcbbb98d45f5ac4eb37771077908/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-iid/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="a65d98c9409f271d3209f4cc1f7d8e0391665fa5">
+        <dex dex="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-iid-9.2.1_3ac978b7f61215f2a1395eea861ee504718c68c7/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-nearby/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="0765979e802b1669c90dc36076559461d5eb6ad1">
+        <dex dex="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-nearby-9.2.1_a8f991aa2c36f4e3cdd4b0b8b47de6b6ffad72d7/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics-impl/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="1141496362c8876f0da4b645fbaf22c0a3618372">
+        <dex dex="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-analytics-impl-9.2.1_c6cd81307f6065d62e7eebb0ee56bdaca5b19de3/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="0874286cc2fd88d54fdf130e9d5372730da6de97">
+        <dex dex="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-24.0.0_8f58f9573024869d7b1c91e5ccaf7b833755fd2d/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="edf9a22ebf25281619265079aec8f5d433da1a5c">
+        <dex dex="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-gcm-9.2.1_c84c1f4f2e33519705e36e430bb5098069df094e/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="152cba5ca28fd4a5191a8577a0fa96d61122041e">
+        <dex dex="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-identity-9.2.1_e30090cddf3e7486c129209fb15781d55fa6ab6e/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager-api/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="77e2e4803396fa79009ace04d9be84184aafcc31">
+        <dex dex="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tagmanager-api-9.2.1_65b8efba69aa46e5d4a426bcfe33105da0fbf94d/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-clearcut/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="90eeba67a669f8fb24db0f821ef81703fe7a02bc">
+        <dex dex="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-clearcut-9.2.1_26a0eaa5cbe0929074082080f121be26cb73e27b/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="2f7e6e2dad1bccaf68a8820820adc6c0d5b96d37">
+        <dex dex="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-24.0.0_23920b570989495cf8423ed28501e92ac4d56798/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.0.0/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="e70f608219ed6b974644c333249ab2bb7b71de98">
+        <dex dex="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-24.0.0_4263a23143fa82a98205a520f82fe97021d3e9db/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/exploded-aar/com.google.firebase/firebase-storage/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="e719de687ac45141de3dd613907860a495580af0">
+        <dex dex="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-storage-9.2.1_42f4bd7ffd5c17309e49573188d82cb051044adc/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/jars/libs/internal_impl-23.0.0.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="03d38bb042efe3e5ce27ba66b729a9523c36d8fe">
+        <dex dex="/Users/Brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-23.0.0_8d2457ffc45f55c46d9dfcd3e578e66c2e94333c/classes.dex" />
+    </item>
+
+</items>
