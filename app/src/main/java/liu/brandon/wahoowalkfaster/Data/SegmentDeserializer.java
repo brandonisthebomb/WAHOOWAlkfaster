@@ -44,7 +44,7 @@ public class SegmentDeserializer implements JsonDeserializer<SegmentResponse> {
             //Log.d(TAG, entry.getValue().getAsString());
             Segment segment = new Segment();
             segment.setId(entry.getKey());
-            segment.setPolyline(entry.getValue().getAsString());
+               segment.setPolyline(entry.getValue().getAsString());
             segments.add(segment);
         }
 

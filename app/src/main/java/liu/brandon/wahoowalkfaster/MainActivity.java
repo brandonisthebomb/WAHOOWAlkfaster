@@ -13,12 +13,14 @@ import com.google.android.gms.maps.MapFragment;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.UiSettings;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.maps.model.PolylineOptions;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.maps.android.PolyUtil;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -38,7 +40,8 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-public class MainActivity extends FragmentActivity implements OnMapReadyCallback {
+public class MainActivity extends FragmentActivity implements OnMapReadyCallback,
+        GoogleMap.OnMarkerClickListener{
 
     private final static String TAG = "MainActivity";
 
@@ -58,14 +61,22 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        loadData();
 
         mMapFragment = (MapFragment) getFragmentManager().findFragmentById(R.id.map);
         mMapFragment.getMapAsync(this);
 
+        this.loadData();
+
+
     }
 
     private void loadData() {
+
+        // Initialize variables
+        mStops = new HashMap<>();
+        mSegments = new HashMap<>();
+        mRoutes = new HashMap<>();
+
         // Create GSON
         Gson gson = new GsonBuilder()
                 .setDateFormat("yyyy-MM-dd'T'HH:mm:ssZ")
@@ -118,7 +129,17 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
         UiSettings settings = mGoogleMap.getUiSettings();
         settings.setAllGesturesEnabled(true);
 
+        // Set onMarkerClick listener
+        mGoogleMap.setOnMarkerClickListener(this);
+
         Log.d(TAG, "Map ready.");
+    }
+
+    @Override
+    public boolean onMarkerClick(Marker marker) {
+        String name = marker.getTitle();
+        Log.d(TAG, "onMarkerClick: " + name);
+        return false;
     }
 
     private class StopCallback implements Callback<StopResponse> {
@@ -141,6 +162,9 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
                             .position(new LatLng(stop.getLocation().getLatitude(),
                                     stop.getLocation().getLongitude()))
                             .title(stop.getName()));
+
+                    // Populate global mStops hashMap
+                    mStops.put(stop.getName(), stop);
                 }
 
                 // Set the initial location and zoom level of the map
@@ -155,7 +179,6 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
 
                 // Get a map of stops
                 mStops = data.getStopMap();
-
             }
         }
 
@@ -189,8 +212,6 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
                 }
 
                 mSegments = data.getSegmentMap();
-
-
             }
         }
 
