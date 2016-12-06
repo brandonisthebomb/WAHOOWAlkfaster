@@ -47,6 +47,7 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
 
     private String agencyId = "347"; // UVA
 
+    private ArrivalsFragment mArrivalsFragment;
     private MapFragment mMapFragment;
     private GoogleMap mGoogleMap;
 
@@ -64,6 +65,9 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
 
         mMapFragment = (MapFragment) getFragmentManager().findFragmentById(R.id.map);
         mMapFragment.getMapAsync(this);
+
+        mArrivalsFragment = (ArrivalsFragment) getFragmentManager()
+                .findFragmentById(R.id.arrivals_fragment);
 
         this.loadData();
 
@@ -139,6 +143,9 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
     public boolean onMarkerClick(Marker marker) {
         String name = marker.getTitle();
         Log.d(TAG, "onMarkerClick: " + name);
+
+        mArrivalsFragment.displayInfo();
+
         return false;
     }
 

@@ -3,6 +3,7 @@ package liu.brandon.wahoowalkfaster;
 import android.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
+import android.view.View;
 import android.view.ViewGroup;
 
 /**
@@ -10,10 +11,15 @@ import android.view.ViewGroup;
  */
 
 public class ArrivalsFragment extends Fragment {
+
     @Override
-    public void onCreateView(LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        return inflater.inflate(R.layout.article_view, container, false);
+        return inflater.inflate(R.layout.fragment_arrivals, container, false);
+    }
+
+    public void displayInfo() {
+
     }
 }
