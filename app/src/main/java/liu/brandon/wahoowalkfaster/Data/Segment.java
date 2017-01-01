@@ -26,6 +26,4 @@ public class Segment {
     public void setPolyline(String polyline) {
         this.polyline = polyline;
     }
-
-
 }

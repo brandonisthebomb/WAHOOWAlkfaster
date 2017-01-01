@@ -34,6 +34,7 @@ import liu.brandon.wahoowalkfaster.Data.SegmentResponse;
 import liu.brandon.wahoowalkfaster.Data.Stop;
 import liu.brandon.wahoowalkfaster.Data.StopResponse;
 import liu.brandon.wahoowalkfaster.Data.TranslocAPI;
+import liu.brandon.wahoowalkfaster.Data.VehicleResponse;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -252,6 +253,18 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
         public void onFailure(Call<RouteResponse> call, Throwable t) {
             Toast.makeText(getApplicationContext(), "Route Response Failed", Toast.LENGTH_SHORT).show();
             Log.d(TAG, "Route query failed: " + call.toString());
+        }
+    }
+
+    private class VehicleCallback implements Callback<VehicleResponse> {
+        @Override
+        public void onResponse(Call<VehicleResponse> call, Response<VehicleResponse> response) {
+
+        }
+
+        @Override
+        public void onFailure(Call<VehicleResponse> call, Throwable t) {
+
         }
     }
 

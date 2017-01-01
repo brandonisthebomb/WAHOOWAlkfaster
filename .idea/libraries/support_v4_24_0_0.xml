@@ -4,13 +4,13 @@
       <root url="jar://$USER_HOME$/.android/build-cache/c15170b457d9e2660183224a44226aa6f9acc212/output/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://$USER_HOME$/.android/build-cache/c15170b457d9e2660183224a44226aa6f9acc212/output/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.android/build-cache/c15170b457d9e2660183224a44226aa6f9acc212/output/res" />
-      <root url="jar://$USER_HOME$/.android/build-cache/c15170b457d9e2660183224a44226aa6f9acc212/output/jars/libs/internal_impl-24.0.0.jar!/" />
+      <root url="jar://$USER_HOME$/.android/build-cache/59f2641429d7b117d28d7e99ecf5256cf64a247b/output/jars/libs/internal_impl-24.0.0.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/59f2641429d7b117d28d7e99ecf5256cf64a247b/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/59f2641429d7b117d28d7e99ecf5256cf64a247b/output/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="jar://$PROJECT_DIR$/../android-sdk-macosx/extras/android/m2repository/com/android/support/support-v4/24.0.0/support-v4-24.0.0-sources.jar!/" />
+      <root url="jar://$USER_HOME$/Library/Android/sdk/extras/android/m2repository/com/android/support/support-v4/24.0.0/support-v4-24.0.0-sources.jar!/" />
     </SOURCES>
   </library>
 </component>
