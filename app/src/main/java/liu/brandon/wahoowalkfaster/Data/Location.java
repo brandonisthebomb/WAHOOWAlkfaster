@@ -13,6 +13,11 @@ public class Location {
     @SerializedName("lng")
     private Double longitude;
 
+    public Location (Double lat, Double lng) {
+        latitude = lat;
+        longitude = lng;
+    }
+
     public Double getLatitude() {
         return latitude;
     }
@@ -31,5 +36,10 @@ public class Location {
 
     public LatLng getLatLng() {
         return new LatLng(latitude, longitude);
+    }
+
+    @Override
+    public String toString() {
+        return "Location latitude: " + latitude + ", longitude: " + longitude;
     }
 }

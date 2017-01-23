@@ -2,6 +2,7 @@ package liu.brandon.wahoowalkfaster.Data;
 
 import com.google.gson.annotations.SerializedName;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -10,7 +11,7 @@ import java.util.List;
 
 public class VehicleResponse {
     @SerializedName("data")
-    private List<Vehicle> vehicles;
+    private ArrayList<Vehicle> vehicles;
     @SerializedName("rate_limit")
     private int rateLimit;
     @SerializedName("expires_in")
@@ -22,11 +23,11 @@ public class VehicleResponse {
     @SerializedName("api_version")
     private String apiVersion;
 
-    public List<Vehicle> getVehicleList() {
+    public ArrayList<Vehicle> getVehicleList() {
         return this.vehicles;
     }
 
-    public void setVehicleList(List<Vehicle> vehicles) {
+    public void setVehicleList(ArrayList<Vehicle> vehicles) {
         this.vehicles = vehicles;
     }
 

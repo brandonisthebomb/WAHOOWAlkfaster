@@ -17,13 +17,14 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import static android.content.ContentValues.TAG;
 
 /**
  * Created by brandon on 12/31/16.
  */
 
 public class VehicleDeserializer implements JsonDeserializer<VehicleResponse> {
+
+    private final static String TAG = "VehicleDeserializer";
 
     @Override
     public VehicleResponse deserialize(JsonElement json, Type typeOfT, JsonDeserializationContext context) throws JsonParseException {
@@ -45,14 +46,18 @@ public class VehicleDeserializer implements JsonDeserializer<VehicleResponse> {
         final String apiVersion = jsonApiVersion.getAsString();
 
         final JsonObject jsonData = jsonObject.getAsJsonObject("data");
-        List<Vehicle> vehicles = new ArrayList<>();
+        ArrayList<Vehicle> vehicles = new ArrayList<>();
         // Agency
         for (Map.Entry<String, JsonElement> entry : jsonData.entrySet()) {
-            Log.d(TAG, entry.toString());
+            //Log.d(TAG, entry.toString());
+            //Log.d(TAG, entry.getValue().getAsJsonArray().toString());
 
             // Vehicle
             for (JsonElement element : entry.getValue().getAsJsonArray()) {
+                //Log.d(TAG, "Vehicle");
+                //Log.d(TAG, element.toString());
                 JsonObject jsonVehicle = element.getAsJsonObject();
+                //Log.d(TAG, jsonVehicle.toString());
 
                 // vehicleID
                 String vehicleID = jsonVehicle.getAsJsonPrimitive("vehicle_id").getAsString();
@@ -60,71 +65,75 @@ public class VehicleDeserializer implements JsonDeserializer<VehicleResponse> {
                 String routeID = jsonVehicle.getAsJsonPrimitive("route_id").getAsString();
                 // segmentID
                 String segmentID = jsonVehicle.getAsJsonPrimitive("segment_id").getAsString();
+                //Log.d(TAG, vehicleID + " " + routeID + " " + segmentID);
 
                 // Arrival estimates
                 JsonArray jsonArrivals = jsonVehicle.getAsJsonArray("arrival_estimates");
-                List<ArrivalEstimate> estimates = new ArrayList<>();
+                //Log.d(TAG, jsonArrivals.toString());
+                ArrayList<ArrivalEstimate> estimates = new ArrayList<>();
                 for (JsonElement arrivalElement : jsonArrivals) {
                     JsonObject arrivalObject = arrivalElement.getAsJsonObject();
-                    ArrivalEstimate estimate = new ArrivalEstimate();
-                    estimates.add(new ArrivalEstimate(arrivalObject.,
-                            arrivalTuple.get(1),
-                            arrivalTuple.get(2)));
+                    //Log.d(TAG, "arrival");
+                    //Log.d(TAG, arrivalObject.toString());
+                    estimates.add(new ArrivalEstimate(
+                            arrivalObject.getAsJsonPrimitive("route_id").getAsString(),
+                            arrivalObject.getAsJsonPrimitive("arrival_at").getAsString(),
+                            arrivalObject.getAsJsonPrimitive("stop_id").getAsString()));
                 }
-                //Log.d(TAG, segments.toString());1
 
-                // Stops
-                JsonArray jsonStops = jsonVehicle.getAsJsonArray("arrival_estimates");
-                List<String> stopsArrayList = new ArrayList<>();
-                for (JsonElement stopElement : jsonStops) {
-                    stopsArrayList.add(stopElement.getAsString());
-                }
-                String[] stops = stopsArrayList.toArray(new String[0]);
+                // tracking status
+                String trackingStatus = jsonVehicle.getAsJsonPrimitive("tracking_status").getAsString();
 
-                //Log.d(TAG, stops.toString());
+                // location
+                JsonObject jsonLocation = jsonVehicle.getAsJsonObject("location");
+                //Log.d(TAG, jsonLocation.toString());
+                Location location = new Location(
+                        jsonLocation.getAsJsonPrimitive("lat").getAsDouble(),
+                        jsonLocation.getAsJsonPrimitive("lng").getAsDouble());
+                //Log.d(TAG, location.toString());
 
-                // isActive
-                boolean isActive = jsonRoute.getAsJsonPrimitive("is_active").getAsBoolean();
-                //Log.d(TAG, String.valueOf(isActive));
 
-                // Agency ID
-                int agencyId = jsonRoute.getAsJsonPrimitive("agency_id").getAsInt();
-                //Log.d(TAG, String.valueOf(agencyId));
+                // speed
+                int speed = jsonVehicle.getAsJsonPrimitive("speed").getAsInt();
+                //Log.d(TAG, speed + "");
 
-                // Name
-                String longName = jsonRoute.getAsJsonPrimitive("long_name").getAsString();
-                //Log.d(TAG, longName);
+                // heading
+                int heading = jsonVehicle.getAsJsonPrimitive("heading").getAsInt();
+                //Log.d(TAG, heading + "");
 
-                // Type
-                String type = jsonRoute.getAsJsonPrimitive("type").getAsString();
-                //Log.d(TAG, type);
+                // last updated on
+                String lastUpdatedOn = jsonVehicle.getAsJsonPrimitive("last_updated_on").getAsString();
+                //Log.d(TAG, lastUpdatedOn);
 
-                // Color
-                int color = Color.parseColor('#' + jsonRoute.getAsJsonPrimitive("color").getAsString());
-                //Log.d(TAG, String.valueOf(color));
-
-                Log.d(TAG, longName + ' ' + Arrays.toString(stops));
-                Route route = new Route();
-                route.setActive(isActive);
-                route.setAgencyId(agencyId);
-                route.setColor(color);
-                route.setId(id);
-                route.setLongName(longName);
-                route.setSegments(segments);
-                route.setStops(stops);
-                route.setType(type);
-                routes.add(route);
+                //Log.d(TAG, vehicleID);
+                Vehicle vehicle = new Vehicle();
+                vehicle.setVehicleID(vehicleID);
+                vehicle.setRouteID(routeID);
+                vehicle.setSegmentID(segmentID);
+                vehicle.setArrivals(estimates);
+                vehicle.setLocation(location);
+                vehicle.setSpeed(speed);
+                vehicle.setHeading(heading);
+                vehicle.setLastUpdatedOn(lastUpdatedOn);
+                vehicle.setTrackingStatus(trackingStatus);
+                vehicles.add(vehicle);
+                Log.d(TAG, vehicle.toString());
             }
+            Log.d(TAG, "got here");
         }
 
+        Log.d(TAG, "got here2");
+
         // Build the final route response
-        final RouteResponse response = new RouteResponse();
+        final VehicleResponse response = new VehicleResponse();
         response.setRateLimit(rateLimit);
         response.setExpiresIn(expiresIn);
         response.setApiLatestVersion(apiLatestVersion);
         response.setGeneratedOn(generatedOn);
         response.setApiVersion(apiVersion);
-        response.setRouteList(routes);
+        response.setVehicleList(vehicles);
+
+
         return response;
     }
 }

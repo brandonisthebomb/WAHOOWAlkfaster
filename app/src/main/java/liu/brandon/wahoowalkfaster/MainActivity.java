@@ -12,6 +12,7 @@ import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapFragment;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.UiSettings;
+import com.google.android.gms.maps.model.CircleOptions;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
@@ -34,6 +35,8 @@ import liu.brandon.wahoowalkfaster.Data.SegmentResponse;
 import liu.brandon.wahoowalkfaster.Data.Stop;
 import liu.brandon.wahoowalkfaster.Data.StopResponse;
 import liu.brandon.wahoowalkfaster.Data.TranslocAPI;
+import liu.brandon.wahoowalkfaster.Data.Vehicle;
+import liu.brandon.wahoowalkfaster.Data.VehicleDeserializer;
 import liu.brandon.wahoowalkfaster.Data.VehicleResponse;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -57,6 +60,7 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
     private Map<String, Stop> mStops;
     private Map<String, Segment> mSegments;
     private Map<String, Route> mRoutes;
+    private Map<String, Vehicle> mVehicles;
 
 
     @Override
@@ -76,17 +80,18 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
     }
 
     private void loadData() {
-
         // Initialize variables
         mStops = new HashMap<>();
         mSegments = new HashMap<>();
         mRoutes = new HashMap<>();
+        mVehicles = new HashMap<>();
 
         // Create GSON
         Gson gson = new GsonBuilder()
                 .setDateFormat("yyyy-MM-dd'T'HH:mm:ssZ")
                 .registerTypeAdapter(SegmentResponse.class, new SegmentDeserializer())
                 .registerTypeAdapter(RouteResponse.class, new RouteDeserializer())
+                .registerTypeAdapter(VehicleResponse.class, new VehicleDeserializer())
                 .create();
 
         // Create Retrofit
@@ -123,6 +128,14 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
                 TextUtils.join(",", args));
         routeResponseCall.enqueue(new RouteCallback());
 
+        // Call get vehicles
+        Call<VehicleResponse> vehicleResponseCall = translocAPI.getVehicles(
+                TranslocAPI.FORMAT,
+                TranslocAPI.CALLBACK,
+                // Convert the args list into a string separated by commas
+                TextUtils.join(",", args));
+        vehicleResponseCall.enqueue(new VehicleCallback());
+
     }
 
 
@@ -133,6 +146,7 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
         // Enable zoom gestures
         UiSettings settings = mGoogleMap.getUiSettings();
         settings.setAllGesturesEnabled(true);
+        settings.setZoomControlsEnabled(true);
 
         // Set onMarkerClick listener
         mGoogleMap.setOnMarkerClickListener(this);
@@ -146,7 +160,6 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
         Log.d(TAG, "onMarkerClick: " + name);
 
         mArrivalsFragment.displayInfo();
-
         return false;
     }
 
@@ -259,12 +272,24 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
     private class VehicleCallback implements Callback<VehicleResponse> {
         @Override
         public void onResponse(Call<VehicleResponse> call, Response<VehicleResponse> response) {
+            int code = response.code();
+            if (code == 200) {
+                VehicleResponse data = response.body();
+                List<Vehicle> vehicles = data.getVehicleList();
 
+                for (Vehicle vehicle : vehicles) {
+                    mGoogleMap.addCircle(new CircleOptions().center(
+                            new LatLng(
+                                    vehicle.getLocation().getLatitude(),
+                                    vehicle.getLocation().getLongitude())));
+                }
+            }
         }
 
         @Override
         public void onFailure(Call<VehicleResponse> call, Throwable t) {
-
+            Toast.makeText(getApplicationContext(), "Vehicle Response Failed", Toast.LENGTH_SHORT).show();
+            Log.d(TAG, "Vehicle query failed: " + call.toString());
         }
     }
 

@@ -44,4 +44,9 @@ public class ArrivalEstimate {
     public void setStopID(String stopID) {
         this.stopID = stopID;
     }
+
+    @Override
+    public String toString() {
+        return "Arrival Estimate route: " + routeID + ", arrival time: " + arrivalTime + ", stop: " + stopID;
+    }
 }

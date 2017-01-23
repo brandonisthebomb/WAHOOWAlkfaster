@@ -48,6 +48,17 @@ public interface TranslocAPI {
             @Query("agencies") String agencies);
 
 
+    @Headers({
+            "X-Mashape-Authorization: CwYowCwhaVmshCbsGzvBFhXBXjprp1FdIQkjsnYrOa6UKkiZBF",
+            "Accept: application/json"
+    })
+    @GET("/vehicles.{format}")
+    Call<VehicleResponse> getVehicles(
+            @Path("format") String format,
+            @Query("callback") String callback,
+            @Query("agencies") String agencies);
+
+
 
 
 }
