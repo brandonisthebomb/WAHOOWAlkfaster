@@ -7,11 +7,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-<<<<<<< HEAD
         sha1="8fa1b298888f15daf9f3fc46e655adb0c9b037ff">
-=======
-        sha1="400282f700aa1de137ded26ce0c461def8f451f9">
->>>>>>> master
         <dex dex="/Users/brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_54207c131568e866bccdba9e2bed344113f5a791/classes.dex" />
     </item>
     <item
