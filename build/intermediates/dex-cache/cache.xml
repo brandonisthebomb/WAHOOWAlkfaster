@@ -7,7 +7,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="fa09728dab45bfa530656e0959542a0aeff5e110">
+        sha1="8fa1b298888f15daf9f3fc46e655adb0c9b037ff">
         <dex dex="/Users/brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_54207c131568e866bccdba9e2bed344113f5a791/classes.dex" />
     </item>
     <item
@@ -16,7 +16,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="53cb4a17c5d4c95f850e380ef5abdec49b36d8d5">
+        sha1="89397ae6749f9c2014ad58532fa30c753547f485">
         <dex dex="/Users/brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_bbd5f2b714672016a8bc5480f1f4fa4e20174097/classes.dex" />
     </item>
 

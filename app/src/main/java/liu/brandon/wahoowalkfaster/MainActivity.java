@@ -91,6 +91,7 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
         mSegments = new HashMap<>();
         mRoutes = new HashMap<>();
         mVehicles = new HashMap<>();
+        mCircles = new ArrayList<>();
 
         // Create GSON
         Gson gson = new GsonBuilder()
