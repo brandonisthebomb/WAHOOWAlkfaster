@@ -2,6 +2,7 @@ package liu.brandon.wahoowalkfaster;
 
 import android.graphics.Color;
 import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.support.v4.app.FragmentActivity;
 import android.text.TextUtils;
 import android.util.Log;
@@ -12,6 +13,7 @@ import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapFragment;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.UiSettings;
+import com.google.android.gms.maps.model.Circle;
 import com.google.android.gms.maps.model.CircleOptions;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
@@ -21,9 +23,12 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.maps.android.PolyUtil;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.logging.Handler;
+import java.util.logging.LogRecord;
 
 import liu.brandon.wahoowalkfaster.Data.Location;
 import liu.brandon.wahoowalkfaster.Data.Route;
@@ -45,7 +50,7 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class MainActivity extends FragmentActivity implements OnMapReadyCallback,
-        GoogleMap.OnMarkerClickListener{
+        GoogleMap.OnMarkerClickListener {
 
     private final static String TAG = "MainActivity";
 
@@ -61,6 +66,7 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
     private Map<String, Segment> mSegments;
     private Map<String, Route> mRoutes;
     private Map<String, Vehicle> mVehicles;
+    private ArrayList<Circle> mCircles;
 
 
     @Override
@@ -128,14 +134,34 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
                 TextUtils.join(",", args));
         routeResponseCall.enqueue(new RouteCallback());
 
+        loadVehicles(translocAPI, args);
+
+
+
+    }
+
+    private void loadVehicles(TranslocAPI translocAPI, String[] args) {
         // Call get vehicles
-        Call<VehicleResponse> vehicleResponseCall = translocAPI.getVehicles(
+        final Call<VehicleResponse> vehicleResponseCall = translocAPI.getVehicles(
                 TranslocAPI.FORMAT,
                 TranslocAPI.CALLBACK,
                 // Convert the args list into a string separated by commas
                 TextUtils.join(",", args));
         vehicleResponseCall.enqueue(new VehicleCallback());
 
+        new CountDownTimer(1000, 1000) {
+
+            @Override
+            public void onTick(long l) {
+            }
+
+            @Override
+            public void onFinish() {
+                Log.d(TAG, "finished");
+                vehicleResponseCall.clone().enqueue(new VehicleCallback());
+                start();
+            }
+        }.start();
     }
 
 
@@ -163,7 +189,7 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
         return false;
     }
 
-    private class StopCallback implements Callback<StopResponse> {
+    public class StopCallback implements Callback<StopResponse> {
         @Override
         public void onResponse(Call<StopResponse> call, Response<StopResponse> response) {
             int code = response.code();
@@ -210,7 +236,7 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
         }
     }
 
-    private class SegmentCallback implements Callback<SegmentResponse> {
+    public class SegmentCallback implements Callback<SegmentResponse> {
         @Override
         public void onResponse(Call<SegmentResponse> call, Response<SegmentResponse> response) {
             int code = response.code();
@@ -243,7 +269,7 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
         }
     }
 
-    private class RouteCallback implements Callback<RouteResponse> {
+    public class RouteCallback implements Callback<RouteResponse> {
         @Override
         public void onResponse(Call<RouteResponse> call, Response<RouteResponse> response) {
             int code = response.code();
@@ -269,19 +295,32 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
         }
     }
 
-    private class VehicleCallback implements Callback<VehicleResponse> {
+    public class VehicleCallback implements Callback<VehicleResponse> {
         @Override
         public void onResponse(Call<VehicleResponse> call, Response<VehicleResponse> response) {
             int code = response.code();
             if (code == 200) {
+                Log.d(TAG, "VehicleCallback onResponse");
                 VehicleResponse data = response.body();
                 List<Vehicle> vehicles = data.getVehicleList();
 
+                for (Circle circle : mCircles) {
+                    circle.remove();
+                }
+
+                // Given a list of vehicles update the map
+                //mVehicles.clear();
+
+
                 for (Vehicle vehicle : vehicles) {
-                    mGoogleMap.addCircle(new CircleOptions().center(
-                            new LatLng(
-                                    vehicle.getLocation().getLatitude(),
-                                    vehicle.getLocation().getLongitude())));
+                    Circle vehicleCircle = mGoogleMap.addCircle(new CircleOptions()
+                            .center(new LatLng(vehicle.getLocation().getLatitude(),
+                                    vehicle.getLocation().getLongitude()))
+                            .radius(10)
+                            .strokeColor(Color.BLACK)
+                            .fillColor(Color.GREEN)
+                            .zIndex(1));
+                    mCircles.add(vehicleCircle);
                 }
             }
         }

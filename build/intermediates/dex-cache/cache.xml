@@ -2,31 +2,13 @@
 <items version="2" >
 
     <item
-        is-multidex="false"
-        jar="/Users/brandon/.android/build-cache/27ca2e77c50e8b82ce4817d95334092ec8d0fc99/output/jars/classes.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="/Users/brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="421b36cf4f0d3bbd75e8f28647fccf36674ef049">
-        <dex dex="/Users/brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/pre-dexed/debug/classes_51e80c6afb17f7110aea8cd4c7324f0748e9dbaa.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/brandon/.android/build-cache/59f2641429d7b117d28d7e99ecf5256cf64a247b/output/jars/libs/internal_impl-24.0.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="fcaf463e10e69c1923ccf1edeba3b4196d239e00">
-        <dex dex="/Users/brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/pre-dexed/debug/internal_impl-24.0.0_16748ea27992bd625f7666265b776b5ccfcb62bc.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/brandon/.android/build-cache/0738e8f5006ca2cda45dd9b743c58f6c616bc282/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="e70f608219ed6b974644c333249ab2bb7b71de98">
-        <dex dex="/Users/brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/pre-dexed/debug/classes_85dbdb29d4f88d735aa6e619d5e1a993e5662dc0.jar" />
+        sha1="fa09728dab45bfa530656e0959542a0aeff5e110">
+        <dex dex="/Users/brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_54207c131568e866bccdba9e2bed344113f5a791/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -34,134 +16,8 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="7fadb286755322aaaf03484e62370b1a2c5e1a75">
+        sha1="53cb4a17c5d4c95f850e380ef5abdec49b36d8d5">
         <dex dex="/Users/brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_bbd5f2b714672016a8bc5480f1f4fa4e20174097/classes.dex" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/brandon/.android/build-cache/59f2641429d7b117d28d7e99ecf5256cf64a247b/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="2f7e6e2dad1bccaf68a8820820adc6c0d5b96d37">
-        <dex dex="/Users/brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/pre-dexed/debug/classes_23f04edc4ff2de6297ce4462d3be6a9fad8d7182.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/brandon/.android/build-cache/516eeb5e8419824dd091578a9ee739b646e4caa2/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="3bd97cfefd783e9de1dd1c30574a6adb44b4409b">
-        <dex dex="/Users/brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/pre-dexed/debug/classes_1e40c5735a0c318875dcd12c2eefecad3dbc847b.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/brandon/.android/build-cache/f7dce847fb304d657ec80e7fc035077ed5f04e7d/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="6f57b76211a1d7b0c1f18873af59faad95664681">
-        <dex dex="/Users/brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/pre-dexed/debug/classes_9ebef988f3a1376c6a2618bfcab98270f05074f0.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/brandon/.android/build-cache/ba16281210fc9b7e0b1a1cd725f2fc9d0ed019d4/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="6b896c1067633db41e9c10a3a5d0919c5c4cfc8c">
-        <dex dex="/Users/brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/pre-dexed/debug/classes_efa92456a7b04dd6a1bdcad76809e62fd9b99a7e.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/brandon/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/retrofit/2.1.0/2de7cd8b95b7021b1d597f049bcb422055119f2c/retrofit-2.1.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="2de7cd8b95b7021b1d597f049bcb422055119f2c">
-        <dex dex="/Users/brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/pre-dexed/debug/retrofit-2.1.0_96b6c39dcfc6827a9326e32138e94c63db222e98.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/brandon/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/24.0.0/support-annotations-24.0.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="2943c74db6d4346ab8c6531adac91fa05c137c40">
-        <dex dex="/Users/brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/pre-dexed/debug/support-annotations-24.0.0_111392fa096b8e3f441a3856a67b89086e3988cb.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/brandon/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.3.0/2b802460eea20f8f2ad9c08c74e0f14718e88aa9/okhttp-3.3.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="2b802460eea20f8f2ad9c08c74e0f14718e88aa9">
-        <dex dex="/Users/brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/pre-dexed/debug/okhttp-3.3.0_8ff6be4594ab16f6ec4db44731f94225115df2a9.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/brandon/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/converter-gson/2.1.0/aa557d71ead91cbf26e0c316a0f593d168303309/converter-gson-2.1.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="aa557d71ead91cbf26e0c316a0f593d168303309">
-        <dex dex="/Users/brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/pre-dexed/debug/converter-gson-2.1.0_73af266c05c459cb9fcfc8347ada75b865d3327e.jar" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="fb72039484ee89bafb24446fcd46ef3e48b2ca68">
-        <dex dex="/Users/brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_54207c131568e866bccdba9e2bed344113f5a791/classes.dex" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/brandon/.android/build-cache/7cccfb1df70091559fa5787fb97b3c677efd4200/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="819c2c3a4fb135e085445d11131d069cf9c32b2a">
-        <dex dex="/Users/brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/pre-dexed/debug/classes_024335b68eaf536a8afcce93bce2c9464feac9e1.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/brandon/.android/build-cache/92b1a66dc24b4d8060f10eac2ddf15b028b6bd7a/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="0874286cc2fd88d54fdf130e9d5372730da6de97">
-        <dex dex="/Users/brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/pre-dexed/debug/classes_909c7ef74cf784458b3c2586d69e386bbee4d689.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/brandon/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.7/751f548c85fa49f330cecbb1875893f971b33c4e/gson-2.7.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="751f548c85fa49f330cecbb1875893f971b33c4e">
-        <dex dex="/Users/brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/pre-dexed/debug/gson-2.7_cef3a3c88624dbb9032a5bee7f265ed6607cdd28.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/brandon/.android/build-cache/e353071ef4a5ce83e7f171ee6a998dc2d24cadcc/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="bbd51be332bace144b3d16501ec0af379c3c8750">
-        <dex dex="/Users/brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/pre-dexed/debug/classes_0d1e89168117783a688f5aaf4b6742a799f577bf.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/brandon/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.8.0/5ea7af56cc7c567ed9856d99efb30740e9b17ff/okio-1.8.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="05ea7af56cc7c567ed9856d99efb30740e9b17ff">
-        <dex dex="/Users/brandon/Desktop/Development/WAHOOWAlkfaster/app/build/intermediates/pre-dexed/debug/okio-1.8.0_83f7ead61bfe31b2d72d7475c7df70ffb953d24b.jar" />
     </item>
 
 </items>

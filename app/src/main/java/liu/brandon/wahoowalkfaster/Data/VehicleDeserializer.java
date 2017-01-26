@@ -7,8 +7,10 @@ import com.google.gson.JsonArray;
 import com.google.gson.JsonDeserializationContext;
 import com.google.gson.JsonDeserializer;
 import com.google.gson.JsonElement;
+import com.google.gson.JsonNull;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
+import com.google.gson.JsonPrimitive;
 
 import java.lang.reflect.Type;
 import java.util.ArrayList;
@@ -49,27 +51,31 @@ public class VehicleDeserializer implements JsonDeserializer<VehicleResponse> {
         ArrayList<Vehicle> vehicles = new ArrayList<>();
         // Agency
         for (Map.Entry<String, JsonElement> entry : jsonData.entrySet()) {
-            //Log.d(TAG, entry.toString());
-            //Log.d(TAG, entry.getValue().getAsJsonArray().toString());
+
+            //Log.d(TAG, entry.toString()); Print out each agency in a string
 
             // Vehicle
             for (JsonElement element : entry.getValue().getAsJsonArray()) {
-                //Log.d(TAG, "Vehicle");
                 //Log.d(TAG, element.toString());
                 JsonObject jsonVehicle = element.getAsJsonObject();
-                //Log.d(TAG, jsonVehicle.toString());
+                //Log.d(TAG, jsonVehicle.toString()); Print out each vehicle in a string
 
                 // vehicleID
                 String vehicleID = jsonVehicle.getAsJsonPrimitive("vehicle_id").getAsString();
+
                 // routeID
                 String routeID = jsonVehicle.getAsJsonPrimitive("route_id").getAsString();
+
                 // segmentID
-                String segmentID = jsonVehicle.getAsJsonPrimitive("segment_id").getAsString();
+                JsonElement segmentElement = jsonVehicle.get("segment_id");
+                String segmentID = "null";
+                if (!(segmentElement instanceof JsonNull))
+                       segmentID = segmentElement.getAsString();
                 //Log.d(TAG, vehicleID + " " + routeID + " " + segmentID);
+
 
                 // Arrival estimates
                 JsonArray jsonArrivals = jsonVehicle.getAsJsonArray("arrival_estimates");
-                //Log.d(TAG, jsonArrivals.toString());
                 ArrayList<ArrivalEstimate> estimates = new ArrayList<>();
                 for (JsonElement arrivalElement : jsonArrivals) {
                     JsonObject arrivalObject = arrivalElement.getAsJsonObject();
@@ -118,11 +124,9 @@ public class VehicleDeserializer implements JsonDeserializer<VehicleResponse> {
                 vehicle.setTrackingStatus(trackingStatus);
                 vehicles.add(vehicle);
                 Log.d(TAG, vehicle.toString());
-            }
-            Log.d(TAG, "got here");
-        }
 
-        Log.d(TAG, "got here2");
+            }
+        }
 
         // Build the final route response
         final VehicleResponse response = new VehicleResponse();
@@ -132,7 +136,6 @@ public class VehicleDeserializer implements JsonDeserializer<VehicleResponse> {
         response.setGeneratedOn(generatedOn);
         response.setApiVersion(apiVersion);
         response.setVehicleList(vehicles);
-
 
         return response;
     }
